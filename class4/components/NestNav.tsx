@@ -3,9 +3,13 @@ import React from "react";
 
 export function NestNav() {
   return (
-    <div>
-      <Link href="/contact-us/ahmad">Ahmad Link</Link>
-      <Link href="/contact-us/ali">Ali Link</Link>
+    <div className="flex flex-row gap-5">
+      <Link className="hover:font-medium underline" href="/contact-us/ahmad">
+        Ahmad Link
+      </Link>
+      <Link className="hover:font-medium underline" href="/contact-us/ali">
+        Ali Link
+      </Link>
     </div>
   );
 }
