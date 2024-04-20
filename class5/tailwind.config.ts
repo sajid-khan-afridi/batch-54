@@ -16,6 +16,11 @@ const config: Config = {
       colors: {
         "blue-550": "#5c6ac4", // example custom color
       },
+      // colors: {
+      //   blue: {
+      //     '550': '#5c6ac4' // example custom color
+      //   }
+      // }
     },
   },
   plugins: [],
