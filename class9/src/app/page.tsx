@@ -24,26 +24,28 @@ interface IProduct {
 const Home = async () => {
   const data = await getData();
   return (
-    <div className="max-w-screen-2xl p-2 grid grid-cols-3 w-full">
-      {data.map((product: IProduct) => (
-        <div key={product._id} className="">
-          {/* <Image
+    <div className="max-w-screen-md p-2  w-screen  ">
+      <div className="grid grid-cols-3">
+        {data.map((product: IProduct) => (
+          <div key={product._id} className="">
+            {/* <Image
             src={product.urlImage}
             alt={product.title}
             width={100}
             height={100}
           /> */}
-          <Image
-            src={urlForImage(product.image).url()}
-            alt={product.title}
-            width={100}
-            height={100}
-          />
-          <p>{product.title}</p>
-          <p>{product.price}</p>
-          <p>{product.category.name}</p>
-        </div>
-      ))}
+            <Image
+              src={urlForImage(product.image).url()}
+              alt={product.title}
+              width={100}
+              height={100}
+            />
+            <p>{product.title}</p>
+            <p>{product.price}</p>
+            <p>{product.category.name}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
