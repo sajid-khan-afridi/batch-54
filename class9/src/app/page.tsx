@@ -24,7 +24,7 @@ interface IProduct {
 const Home = async () => {
   const data = await getData();
   return (
-    <div className="max-w-screen-md p-2  w-screen  ">
+    <div className="max-w-screen-md p-2  w-screen mx-auto  ">
       <div className="grid grid-cols-3">
         {data.map((product: IProduct) => (
           <div key={product._id} className="">
