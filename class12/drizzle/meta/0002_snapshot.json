@@ -1,0 +1,44 @@
+{
+  "id": "fc4c654e-0dfe-4a7c-85c9-5d11165ebb57",
+  "prevId": "d10fda9b-970c-476a-b67e-6e2f83df2b64",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.todo12": {
+      "name": "todo12",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "text": {
+          "name": "text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "completed": {
+          "name": "completed",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false,
+          "default": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
