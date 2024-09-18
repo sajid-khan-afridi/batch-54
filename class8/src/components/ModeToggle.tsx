@@ -27,7 +27,7 @@ export function ModeToggle() {
       <DropdownMenuContent align="end">
         {themes.map((theme) => {
           return (
-            <DropdownMenuItem onClick={() => setTheme(theme)}>
+            <DropdownMenuItem key={theme} onClick={() => setTheme(theme)}>
               {theme}
             </DropdownMenuItem>
           );
