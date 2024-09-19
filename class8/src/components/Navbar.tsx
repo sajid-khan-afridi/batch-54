@@ -182,10 +182,8 @@ function Navbar() {
               </div>
               <ul className="flex flex-col items-center justify-center ">
                 {links.map((link) => (
-                  <li>
-                    <Link key={link.hRef} href={link.hRef}>
-                      {link.lNames}
-                    </Link>
+                  <li key={link.hRef}>
+                    <Link href={link.hRef}>{link.lNames}</Link>
                   </li>
                 ))}
                 {/* <li>Female</li>
