@@ -1,4 +1,4 @@
-import { getImageUrl } from './utils.js'
+import { getImageUrl } from "./utils.js";
 
 export default function Profile() {
   return (
@@ -6,8 +6,8 @@ export default function Profile() {
       <Avatar
         size={100}
         person={{
-          name: 'Katsuko Saruhashi',
-          imageId: 'YfeOqp2'
+          name: "Katsuko Saruhashi",
+          imageId: "YfeOqp2",
         }}
       />
     </Card>
@@ -15,8 +15,6 @@ export default function Profile() {
 }
 
 function Avatar({ person, size }) {
-
-    
   return (
     <img
       className="avatar"
@@ -29,9 +27,5 @@ function Avatar({ person, size }) {
 }
 
 function Card({ children }) {
-  return (
-    <div className="card">
-      {children}
-    </div>
-  );
+  return <div className="card">{children}</div>;
 }
